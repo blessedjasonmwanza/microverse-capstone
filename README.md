@@ -62,7 +62,7 @@ Open the project using a live saver extension that can be found into your code e
 
 - GitHub: [@blessedjasonmwanza](https://github.com/blessedjasonmwanza)
 - Twitter: [@mwanzabj](https://twitter.com/mwanzabj)
-- LinkedIn: [Blessedjasonmwanza](https://linkedin.com/in/blessedjasonmwanza)
+- LinkedIn: [Blessed Jason Mwanza](https://linkedin.com/in/blessedjasonmwanza)
 - Medium: [@mwanzabj](https://medium.com/@mwanzabj)
 - Facebook: [Blessed Jason Mwanza](https://facebook.com/blessedjasonmwanza)
 - Youtube: [Blessed Jason Mwanza](https://www.youtube.com/channel/UCarmzp5wfUxvCGScIwJZNfg)
