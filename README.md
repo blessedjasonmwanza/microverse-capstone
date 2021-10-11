@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Microverse Capstone
+# Microverse Capstone Project
 
 > This is my second website project built during Microverse training program.
 > In this project, I am demonstrating my practical knowledge in; 
