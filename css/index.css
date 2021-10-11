@@ -162,6 +162,7 @@ main {
   }
 
   .top-main-header .nav-menu {
+    display: flex !important;
     position: relative;
     flex-direction: row;
     padding: 0;
