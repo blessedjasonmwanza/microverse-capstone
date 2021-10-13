@@ -453,13 +453,7 @@ main .banner-content address {
   }
 
   .featured-speakers-wrapper {
-    flex-flow: row wrap;
     margin: 0 6%;
-    justify-content: space-between;
-  }
-
-  .speaker {
-    flex-basis: 450px;
   }
 
   .featured-speakers-wrapper .speaker:nth-child(2) {
@@ -488,12 +482,29 @@ main .banner-content address {
   .top-main-header .nav-menu {
     gap: 25px;
   }
+
+  .featured-speakers-wrapper {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0 8.5%;
+  }
+
+  .speaker {
+    flex-basis: 48%;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
-@media screen and (min-width: 1150px) {
+@media screen and (min-width: 1020px) {
   .top-main-header,
   .top-mini-social-actions {
     padding: 0 12%;
+  }
+
+  .featured-speakers-wrapper {
+    flex-flow: row wrap;
+    justify-content: space-between;
   }
 
   .top-main-header .nav-menu {
