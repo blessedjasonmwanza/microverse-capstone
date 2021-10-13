@@ -553,7 +553,7 @@ main .banner-content address {
 @media screen and (min-width: 1020px) {
   .top-main-header,
   .top-mini-social-actions {
-    padding: 0 12%;
+    padding: 0 8%;
   }
 
   .featured-speakers-wrapper {
