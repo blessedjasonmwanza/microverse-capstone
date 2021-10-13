@@ -341,6 +341,37 @@ main .banner-content address {
   margin: 25px 6%;
 }
 
+.footer {
+  align-items: center;
+  align-content: center;
+  padding: 50px 6%;
+}
+
+.footer.light {
+  color: var(--theme-dark-gray);
+}
+
+.footer.light a {
+  color: var(--theme-dark-gray);
+  font-weight: bold;
+}
+
+.footer.dark {
+  background: var(--theme-dark-gray);
+  color: #fff;
+}
+
+.footer.dark a {
+  color: #fff;
+  font-weight: bold;
+}
+
+.footer img {
+  height: 50px;
+  width: auto;
+  max-width: 30%;
+}
+
 @media screen and (max-width: 450px) {
   .main-programs .program h3 {
     font-size: 1.1em;
