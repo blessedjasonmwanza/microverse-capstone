@@ -67,6 +67,14 @@ body * {
   color: var(--theme-dark-gray);
 }
 
+.bg-white {
+  background-color: #fff;
+}
+
+.text-center {
+  text-align: center;
+}
+
 .section-dash-splitter {
   display: block;
   clear: both;
@@ -115,6 +123,10 @@ body {
   z-index: 1;
 }
 
+.top-mini-social-actions {
+  display: none;
+}
+
 .top-main-header .nav-menu {
   display: none;
   padding: 0;
@@ -150,8 +162,24 @@ body {
 }
 
 main {
-  margin-top: var(--top-header-height);
   width: 100%;
+  margin-top: var(--top-header-height);
+  overflow-x: hidden;
+}
+
+.greeting-text {
+  font-size: 26px;
+  font-family: 'Quicksand', var(--default-font-family);
+  color: #ccc;
+  width: calc(100vw - 12%);
+}
+
+.general-text {
+  font-size: 26px;
+  font-family: var(--default-font-family);
+  line-height: 45px;
+  color: #6b6a6a;
+  padding: 0 6%;
 }
 
 main .banner-content {
@@ -166,6 +194,13 @@ main .banner-content {
   opacity: 0;
   transform: translateY(3rem);
   animation: fadeIn 2s ease forwards;
+}
+
+main .about-banner-section {
+  background-image: linear-gradient(to bottom, #fff, #e8e8e8), url(../images/compoundcode-event-mobile.jpg);
+  background-blend-mode: hard-light;
+  min-height: auto;
+  padding-bottom: 50px;
 }
 
 main .banner-content b {
@@ -187,11 +222,19 @@ main .banner-content h1 {
   animation: fadeIn 2s ease forwards;
 }
 
+main .about-banner-section h1 {
+  margin-top: 20px;
+  font-size: 4em;
+}
+
 main .banner-content p {
   border-radius: 3px;
   max-width: calc(100% - 15%);
   margin-bottom: 0;
   border-bottom: 0 solid transparent;
+  font-size: 26px;
+  line-height: 45px;
+  color: #6b6a6a;
 }
 
 .main-programs h2 {
@@ -294,10 +337,6 @@ main .banner-content address {
   width: 34px;
 }
 
-.section-title {
-  text-align: center;
-}
-
 .featured-speakers-wrapper .speaker:nth-child(2) {
   display: none;
 }
@@ -341,6 +380,76 @@ main .banner-content address {
   margin: 25px 6%;
 }
 
+.contact-per-mail {
+  padding: 50px 0;
+}
+
+.about-logo {
+  background: #fff;
+}
+
+.about-logo .section-title {
+  font-size: 32px;
+  padding: 40px 6%;
+  width: calc(100% - 50%);
+  margin: 0 auto;
+  line-height: 56px;
+  color: var(--theme-dark-gray);
+}
+
+.about-logo .general-text {
+  width: calc(100% - 22%);
+  margin: 0 auto;
+}
+
+.about-logo .logo {
+  display: flex;
+  margin: 63px 10%;
+  width: 80%;
+  border: 1px solid var(--theme-gray);
+  align-self: center;
+  border-radius: 2px;
+}
+
+.summits {
+  background: #fff;
+  padding: 50px 0;
+  gap: 25px;
+  border-top: 1px solid var(--theme-gray);
+}
+
+.summits .summit-wrapper {
+  gap: 30px;
+}
+
+.summits .summit {
+  background-color: rgb(236, 82, 66);
+  background-blend-mode: multiply;
+  width: 90%;
+  height: 400px;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 36px;
+  font-family: 'Quicksand', var(--default-font-family);
+}
+
+.summits .summit h2,
+.summits .summit p {
+  margin: 5px 0;
+}
+
+.summits .summit p {
+  font-size: 26px;
+}
+
+.summits .summit1 {
+  background-image: url('../images/about-1.jpg');
+}
+
+.summits .summit2 {
+  background-image: url('https://scontent.flun2-1.fna.fbcdn.net/v/t1.6435-9/s960x960/66358532_2219213801742593_1528965691170881536_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=e3f864&_nc_eui2=AeGDr6nRi8lNc4O3EFUBE3r-Tp2axTfmmZdOnZrFN-aZlyepLIXgZM3VDIeGoyHKWzcOsyvqSMLwu_KX55kaxffw&_nc_ohc=5gLyv20hL_4AX9ia8_m&_nc_ht=scontent.flun2-1.fna&oh=203ea8d9e8dc35de86f91b34958310c5&oe=618E9EEB');
+}
+
 .footer {
   align-items: center;
   align-content: center;
@@ -372,6 +481,11 @@ main .banner-content address {
   max-width: 30%;
 }
 
+.about-logo .logo img {
+  margin: 0 auto;
+  max-height: 250px;
+}
+
 @media screen and (max-width: 450px) {
   .main-programs .program h3 {
     font-size: 1.1em;
@@ -399,6 +513,7 @@ main .banner-content address {
   }
 
   .top-mini-social-actions {
+    display: flex;
     height: var(--top-mini-header-height);
     position: fixed;
     top: 0;
@@ -523,6 +638,18 @@ main .banner-content address {
     padding: 0;
     padding-bottom: 4px;
     border-bottom: 1px solid #fff;
+  }
+
+  .summits .summit-wrapper {
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 6%;
+  }
+
+  .summits .summit {
+    float: left;
+    max-width: 40%;
+    height: 250px;
   }
 }
 
