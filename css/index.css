@@ -452,7 +452,7 @@ main .banner-content address {
 .footer {
   align-items: center;
   align-content: center;
-  padding: 50px 6%;
+  background: #fff;
 }
 
 .footer.light {
@@ -478,6 +478,11 @@ main .banner-content address {
   height: 50px;
   width: auto;
   max-width: 30%;
+  margin-left: 4%;
+}
+
+.footer section {
+  margin-right: 4%;
 }
 
 .about-logo .logo img {
@@ -493,6 +498,18 @@ main .banner-content address {
   .main-programs .program p {
     font-size: 17px;
   }
+
+  .footer {
+    font-size: 12px;
+    justify-content: space-between;
+  }
+
+  .footer section {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    float: right;
+  }
 }
 
 @media screen and (max-width: 760px) {
@@ -505,10 +522,20 @@ main .banner-content address {
   }
 }
 
+@media screen and (max-width: 769px) {
+  .desktop-only {
+    display: none;
+  }
+}
+
 /* desktop preview */
 @media screen and (min-width: 769px) {
   .mobile-only {
     display: none;
+  }
+
+  .footer img {
+    margin-left: 8%;
   }
 
   .top-mini-social-actions {
@@ -649,6 +676,10 @@ main .banner-content address {
     float: left;
     max-width: 40%;
     height: 250px;
+  }
+
+  .footer section {
+    margin-right: 8%;
   }
 }
 
