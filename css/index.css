@@ -524,6 +524,11 @@ main .banner-content address {
   .top-main-header .nav-menu {
     display: none;
   }
+
+  .speaker .description {
+    padding-left: 10px;
+    font-size: 13px;
+  }
 }
 
 @media screen and (max-width: 769px) {
