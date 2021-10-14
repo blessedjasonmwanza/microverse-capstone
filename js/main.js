@@ -60,7 +60,8 @@ document.addEventListener('DOMContentLoaded', () => {
     },
   ];
   featuredSpeakers.forEach((speaker) => {
-    speakersSection.innerHTML += `
+    if (speakersSection) {
+      speakersSection.innerHTML += `
       <article class="d-flex row speaker">
         <img src="${speaker.profileImg}" alt="speaker">
         <div class="d-inline-flex cols description">
@@ -71,5 +72,6 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
       </article>
     `;
+    }
   });
 });
