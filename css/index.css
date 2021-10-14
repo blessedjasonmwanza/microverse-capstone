@@ -114,7 +114,7 @@ body {
   left: 0;
   right: 0;
   box-shadow: none;
-  background: #fff;
+  background: transparent;
   justify-content: start;
   flex-direction: column;
   align-items: flex-start;
@@ -163,7 +163,6 @@ body {
 
 main {
   width: 100%;
-  margin-top: var(--top-header-height);
   overflow-x: hidden;
 }
 
